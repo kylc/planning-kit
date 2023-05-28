@@ -1,0 +1,20 @@
+[package]
+name = "planning-kit-py"
+authors = ["Kyle Cesare <kcesare@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "planning_kit"
+crate-type = ["cdylib"]
+
+[dependencies]
+planning-kit = { path = "../planning-kit" }
+nalgebra = { version = "0.32", features = [ "rand" ] }
+parry3d-f64 = "0.13"
+petgraph = "0.6"
+pyo3 = { version = "0.18", features = [ "extension-module", "abi3-py38" ] }
+rand = "0.8"
+
+urdf-rs = "0.7"

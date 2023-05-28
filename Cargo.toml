@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "crates/planning-kit",
+    "crates/planning-kit-py",
+]
