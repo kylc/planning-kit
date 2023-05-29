@@ -20,7 +20,7 @@ https://github.com/kylc/planning-kit/blob/e83075cf0f9afa06b3d94a9de964c3397302c0
 
 A state space (or configuration space) is defined by all possible configurations of the system. Arbitrary state space definitions are possible for use with the library.
 
-For example, to define a Euclidean space (which has equivalent behavior to the built-in `planning_kit.EuclideanSpace`):
+For example, to define a Euclidean space (which has equivalent behavior to the built-in `StateSpace.euclidean`):
 
 https://github.com/kylc/planning-kit/blob/e83075cf0f9afa06b3d94a9de964c3397302c08e/demo/02_custom_space.py#L1-L26
 
