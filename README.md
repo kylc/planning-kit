@@ -20,6 +20,10 @@ Plan around a sphere obstacle in $\mathbb{R}^3$ using the RRT-Connect planner:
 
 https://github.com/kylc/planning-kit/blob/e83075cf0f9afa06b3d94a9de964c3397302c08e/demo/01_intro.py#L1-L33
 
+<p align="center">
+    <img height="400" src="https://user-images.githubusercontent.com/233860/244265174-68069931-3bf9-410e-9c4f-5a0e3baff516.png">
+</p>
+
 ## Details
 
 ### State Space
@@ -30,6 +34,10 @@ For example, to define a Euclidean space (which has equivalent behavior to the b
 
 https://github.com/kylc/planning-kit/blob/e83075cf0f9afa06b3d94a9de964c3397302c08e/demo/02_custom_space.py#L1-L26
 
+<p align="center">
+    <img height="400" src="https://user-images.githubusercontent.com/233860/244265175-285e9884-19be-418c-8c75-16cd02faaf0e.png">
+</p>
+
 ### Constraints
 
 Planning subject to manifold constraints is implemented via the unifying framework IMACS (implicit manifold configuration space) presented in [[KiMK19]](#KiMK19). Projection is used to adhere samples from an ambient space to the constrained manifold while preserving the planner properties of probabilistic completeness and asymptotic optimality.
@@ -39,6 +47,10 @@ In order to converge on an adhering sample, Newton's method is used to approxima
 For example, we can define a constraint which confines the state space to the surface of a unit sphere. With this constraint, we can define a state space which is automatically projected into the manifold. This state space can be used like any other, e.g. for use in motion planning algorithms.
 
 https://github.com/kylc/planning-kit/blob/e83075cf0f9afa06b3d94a9de964c3397302c08e/demo/03_constraints.py#L1-L14
+
+<p align="center">
+    <img height="400" src="https://user-images.githubusercontent.com/233860/244265172-db2e12b8-6100-41d0-bdbe-75b8b8af4b6b.png">
+</p>
 
 ### Planning
 
