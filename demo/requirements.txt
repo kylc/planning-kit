@@ -1,0 +1,5 @@
+numpy==1.24.3
+scipy==1.10.1
+rerun-sdk==0.6.0
+trimesh==3.22.0
+yourdfpy==0.0.53

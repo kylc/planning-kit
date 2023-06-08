@@ -28,6 +28,10 @@ impl KinematicChainProblem {
         self.chain.nq()
     }
 
+    pub fn chain(&self) -> &KinematicChain {
+        &self.chain
+    }
+
     pub fn joint_space(&self) -> DynamicEuclideanSpace {
         // TODO: Use real joint limits from model
         let lo = DVector::repeat(self.nq(), -PI);

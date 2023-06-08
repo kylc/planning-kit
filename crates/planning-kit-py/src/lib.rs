@@ -1,7 +1,7 @@
 use constraint::PyConstraint;
 use nalgebra::DVector;
 use planning_kit::{planner::prm::Roadmap, state::StateSpace, validator::MotionValidator};
-use problem::{KinematicChainProblem, Mesh};
+use problem::{PyKinematicChainProblem, Mesh};
 use pyo3::{prelude::*, types::PyTuple};
 
 use state::PyStateSpace;
@@ -260,7 +260,7 @@ pub fn rrt_connect(
 #[pyo3(signature = (space, problem, /, discretization=0.1, n_samples=1000, connectivity=10))]
 pub fn prm_roadmap_problem(
     space: &PyStateSpace,
-    problem: &KinematicChainProblem,
+    problem: &PyKinematicChainProblem,
     discretization: f64,
     n_samples: usize,
     connectivity: usize,
@@ -285,7 +285,7 @@ pub fn prm_roadmap_problem(
 #[pyo3(signature = (space, problem, /, start, goal, discretization=0.1, steering_dist=1.0))]
 pub fn rrt_problem(
     space: &PyStateSpace,
-    problem: &KinematicChainProblem,
+    problem: &PyKinematicChainProblem,
     start: &PyAny,
     goal: &PyAny,
     discretization: f64,
@@ -317,7 +317,7 @@ pub fn rrt_problem(
 #[pyo3(signature = (space, problem, /, start, goal, discretization=0.1, steering_dist=1.0, n=1000))]
 pub fn rrt_connect_problem(
     space: &PyStateSpace,
-    problem: &KinematicChainProblem,
+    problem: &PyKinematicChainProblem,
     start: &PyAny,
     goal: &PyAny,
     discretization: f64,
@@ -358,7 +358,7 @@ fn planning_kit_py(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
 
     // problem
     m.add_class::<Mesh>()?;
-    m.add_class::<KinematicChainProblem>()?;
+    m.add_class::<PyKinematicChainProblem>()?;
 
     // state
     m.add_class::<PyStateSpace>()?;
