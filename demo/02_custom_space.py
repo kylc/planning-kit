@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import numpy as np
+import rerun as rr
 from planning_kit import StateSpace
 
 
@@ -24,3 +25,8 @@ class MyEuclideanSpace:
 # Once we wrap our custom implementation in a StateSpace object, we can use it
 # as any other.
 space = StateSpace.custom(MyEuclideanSpace(dim=3))
+
+# Log everything to Rerun!
+rr.init("pk.02_custom_space", spawn=True)
+rr.log_view_coordinates("space", xyz="FLU", timeless=True)
+rr.log_points("space", positions=[space.sample_uniform() for _ in range(0, 1000)])
