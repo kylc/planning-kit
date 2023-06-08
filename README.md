@@ -8,6 +8,12 @@
 
 planning-kit is an experimental toolbox implementing sampling-based motion planning for high-dimensional systems. The toolbox is exposed in the form of a Rust library with Python bindings.
 
+## Setup
+
+1. Download a recent `.whl` from [GitHub Releases](https://github.com/kylc/planning-kit/releases)
+2. Run `pip install planning_kit_py<...>.whl` (replace `<...>` with the actual filename)
+3. Test it: `python -c 'import planning_kit'`
+
 ## Usage
 
 Plan around a sphere obstacle in $\mathbb{R}^3$ using the RRT-Connect planner:
