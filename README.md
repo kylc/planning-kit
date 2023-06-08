@@ -40,7 +40,7 @@ https://github.com/kylc/planning-kit/blob/7579c0d1d3b0b75492f9c6b02b75627785d201
 
 ### Constraints
 
-Planning subject to manifold constraints is implemented via the unifying framework IMACS (implicit manifold configuration space) presented in [[KiMK19]](#KiMK19). Projection is used to adhere samples from an ambient space to the constrained manifold while preserving the planner properties of probabilistic completeness and asymptotic optimality.
+Planning subject to manifold constraints is implemented via the unifying framework IMACS (implicit manifold configuration space) presented in [[KiMK19]](#kimk19). Projection is used to adhere samples from an ambient space to the constrained manifold while preserving the planner properties of probabilistic completeness and asymptotic optimality.
 
 In order to converge on an adhering sample, Newton's method is used to approximate the roots of the constraints. Constraint Jacobians (required for Newton's method) are automatically computed via central finite difference or complex-step differentiation, or are provided analytically.
 
@@ -56,9 +56,9 @@ https://github.com/kylc/planning-kit/blob/7579c0d1d3b0b75492f9c6b02b75627785d201
 
 | Planner     | Category     | Optimal | Reference           |
 |-------------|--------------|---------|---------------------|
-| PRM         | Multi-query  | :x:     | [[KSLO96]](#KSLO96) |
-| RRT         | Single-query | :x:     | [[LaVa98]](#LaVa98) |
-| RRT-Connect | Single-query | :x:     | [[KuLa00]](#KuLa00) |
+| PRM         | Multi-query  | :x:     | [[KSLO96]](#kslo96) |
+| RRT         | Single-query | :x:     | [[LaVa98]](#lava98) |
+| RRT-Connect | Single-query | :x:     | [[KuLa00]](#kula00) |
 
 ### Post-processing
 
@@ -74,14 +74,14 @@ https://user-images.githubusercontent.com/233860/244271528-99e51d06-ac2d-44eb-88
 
 ## References
 
-<a id="KiMK19">[KiMK19]:</a>
+<a id="kimk19">[KiMK19]:</a>
 Z. Kingston, M. Moll, and L. E. Kavraki, "Exploring implicit spaces for constrained sampling-based planning," The International Journal of Robotics Research, vol. 38, no. 10–11, pp. 1151–1178, Sep. 2019, doi: 10.1177/0278364919868530.
 
-<a id="KSLO96">[KSLO96]:</a>
+<a id="kslo96">[KSLO96]:</a>
 L. E. Kavraki, P. Svestka, J.-C. Latombe, and M. H. Overmars, "Probabilistic roadmaps for path planning in high-dimensional configuration spaces," IEEE Transactions on Robotics and Automation, vol. 12, no. 4, pp. 566–580, Aug. 1996, doi: 10.1109/70.508439.
 
-<a id="LaVa98">[LaVa98]:</a>
+<a id="lava98">[LaVa98]:</a>
 S. LaValle, "Rapidly-exploring random trees : a new tool for path planning," The annual research report, 1998, Accessed: May 26, 2023. [Online]. Available: https://www.semanticscholar.org/paper/Rapidly-exploring-random-trees-%3A-a-new-tool-for-LaValle/d967d9550f831a8b3f5cb00f8835a4c866da60ad
 
-<a id="KuLa00">[KuLa00]:</a>
+<a id="kula00">[KuLa00]:</a>
 J. J. Kuffner and S. M. LaValle, "RRT-connect: An efficient approach to single-query path planning," in Proceedings 2000 ICRA. Millennium Conference. IEEE International Conference on Robotics and Automation. Symposia Proceedings (Cat. No.00CH37065), San Francisco, CA, USA: IEEE, 2000, pp. 995–1001. doi: 10.1109/ROBOT.2000.844730.
