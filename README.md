@@ -64,6 +64,14 @@ https://github.com/kylc/planning-kit/blob/7579c0d1d3b0b75492f9c6b02b75627785d201
 
 TODO
 
+## Application
+
+One potential application is to plan a joint-space trajectory for a robot arm which does not collide with obstacles in the environment. A predefined setup for this problem is defined in `planning_kit.KinematicChainProblem`. An example demonstrating its usage is provided:
+
+https://github.com/kylc/planning-kit/blob/7579c0d1d3b0b75492f9c6b02b75627785d201b7/demo/04_arm_obstacle.py#L1-L68
+
+https://user-images.githubusercontent.com/233860/244271528-99e51d06-ac2d-44eb-8861-74b1e960c59c.webm
+
 ## References
 
 <a id="KiMK19">[KiMK19]:</a>
