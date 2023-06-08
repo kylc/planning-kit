@@ -4,6 +4,7 @@
     <img alt="MIT"    src="https://img.shields.io/badge/license-MIT-blue.svg">
     <img alt="Apache" src="https://img.shields.io/badge/license-Apache-blue.svg">
     <img alt="CI"     src="https://github.com/kylc/planning-kit/actions/workflows/ci.yaml/badge.svg">
+    <a href="https://zenodo.org/badge/latestdoi/646611176"><img src="https://zenodo.org/badge/646611176.svg" alt="DOI"></a>
 </p>
 
 planning-kit is an experimental toolbox implementing sampling-based motion planning for high-dimensional systems. The toolbox is exposed in the form of a Rust library with Python bindings.
